@@ -1,0 +1,64 @@
+{
+  "nikeShoes": [
+    {
+      "id": 1,
+      "main_photo": "../img/NikeBlazerMid__1.jpg",
+      "title": "Nike Blazer Mid",
+      "price": "270 BYN",
+      "materials": "Натуральная кожа, текстиль, резина",
+      "color": "Белый, черный",
+      "country": "Индия",
+      "alt": "Кроссовки Nike"
+    },
+    {
+      "id": 2,
+      "main_photo": "../img/NikeCortez__1.jpg",
+      "title": "NikeCortez",
+      "price": "220 BYN",
+      "materials": "Натуральная кожа, текстиль, резина",
+      "color": "Белый, красный",
+      "country": "Вьетнам",
+      "alt": "Кроссовки Nike"
+    },
+    {
+      "id": 3,
+      "main_photo": "../img/NikeMax__1.jpg",
+      "title": "Nike Air Max 90",
+      "price": "250 BYN",
+      "materials": "Текстиль, резина",
+      "color": "Белый, серый",
+      "country": "Вьетнам",
+      "alt": "Кроссовки Nike"
+    },
+    {
+      "id": 4,
+      "main_photo": "../img/NikeZoom__1.jpg",
+      "title": "NikeZoom",
+      "price": "225 BYN",
+      "materials": "Натуральная кожа, текстиль, резина",
+      "color": "Серый, красный",
+      "country": "Индонезия",
+      "alt": "Кроссовки Nike"
+    },   
+    {
+      "id": 5,
+      "main_photo": "../img/Nike_270__1.jpg",
+      "title": "Nike Air Max 270",
+      "price": "355 BYN",
+      "materials": "Текстиль, резина",
+      "color": "Белый, черный",
+      "country": "Вьетнам",
+      "alt": "Кроссовки Nike"
+    },
+    {
+      "id": 6,
+      "main_photo": "../img/NikeAirMax__1.jpg",
+      "title": "Nike Air Force",
+      "price": "250 BYN",
+      "materials": "Натуральная кожа, текстиль, резина",
+      "color": "Белый, черный",
+      "country": "Индонезия",
+      "alt": "Кроссовки Nike"
+    }
+  ]
+}

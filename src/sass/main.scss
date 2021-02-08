@@ -1,0 +1,917 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 400;
+  color: #F0F0F0;
+  overflow-x: hidden;
+}
+.container{
+  margin: 0 10%;
+  padding: 20px 0;
+}
+input{
+  border: 1px solid rgb(134, 87, 134);
+  outline: 0;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+  /* Header */
+
+.header{
+  background-color: rgb(134, 87, 134);
+}
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title{
+  font-size: 20px;
+  font-weight: 500;
+}
+.header__input{
+  display: flex;
+  align-items: baseline;
+  position: relative;
+}
+.header__search{
+  padding: 10px 30px;
+  border-radius: 5px;
+  width: 300px;
+}
+.fa-search{
+  position: absolute;
+  z-index: 100;
+  top: 10px;
+  right: 10px;
+  color:  rgb(134, 87, 134);
+}
+.fa-search:hover{
+  cursor: pointer;
+}
+.header__search__icon{
+  background-color: #fff;
+}
+.header__nav{
+  display: flex;
+  align-items: baseline;
+}
+.nav__elements{
+  margin-left: 30px;
+
+  transition: 0.2s linear;
+}
+.nav__elements:hover{
+  cursor: pointer;
+}
+.fas{
+  cursor: pointer;
+}
+
+  /* Document Search */
+
+.document__search{
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgb(134, 87, 134);
+}
+.document__search__title{
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+}
+.document__search__container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+  /* Slider */
+
+.slider{
+  background-color: rgb(56, 49, 49);
+}
+.slider__container{
+  padding: 30px 10%;
+  padding-bottom: 70px;
+}
+.slider__all{
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.slider__photo{
+  transition: 0.3s linear;
+}
+.slider__photo img{
+  height: 400px;
+  border-radius: 3px;
+}
+.slider__left{
+  position: absolute;
+  z-index: 100;
+  width: 50px;
+  line-height: 50px;
+  top: 45%;
+  left: 0;
+  margin-left: 20px;
+  font-size: 30px;
+  background-color: rgba(153, 146, 146, 0.6);
+  border-radius: 50%;
+  text-align: center;
+}
+.slider__right{
+  position: absolute;
+  z-index: 100;
+  top: 45%;
+  right: 0;
+  width: 50px;
+  line-height: 50px;
+  margin-right: 20px;
+  font-size: 30px;
+  background-color: rgba(153, 146, 146, 0.6);
+  border-radius: 50%;
+  text-align: center;
+}
+.fa-arrow-left,
+.fa-arrow-right{
+  color:rgb(227, 252, 6);
+}
+.slider__left:hover,
+.slider__right:hover{
+  cursor: pointer;
+}
+
+  /* Main Blocks */
+
+.main__blocks{
+  background-color: #ffffff;
+  padding: 50px 0 ;
+}
+.main__shoes{
+  font-size: 30px;
+  margin-bottom: 20px;
+  color:  rgb(134, 87, 134);
+  font-weight: 600;
+  text-align: center;
+}
+.main__blocks__container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main__block {
+  width: 20%; 
+  text-align: center;
+}
+.main__block img{
+  width: 100%; 
+  height: 200px;
+  border-radius: 20px;
+}
+.main__title{
+  color: rgb(134, 87, 134);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+  /* Footer */
+
+.footer{
+  background: rgb(134, 87, 134);
+}
+.footer__container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer__blocks{
+  padding-top: 30px;
+}
+.footer__list{
+  list-style: none;
+  margin: 0;
+}
+.footer__list li{
+  padding-bottom: 17px;
+}
+.footer__items{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+}
+.bold{
+  font-weight: 700;
+}
+.disable{
+  cursor: default;
+}
+
+.footer__images img{
+  align-self: baseline;
+  padding-right: 37px;
+}
+.footer__images img:last-child{
+  padding-right: 0;
+}
+
+  /* Regestration */
+
+.regestration__window{
+  /* display: none; */
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  
+  transition: 1s linear ;
+}
+.regestration__container{
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: #ffffff;
+  border: 1px solid rgb(134, 87, 134);
+}
+.regestration__form{
+  padding: 30px; 
+  color: rgb(134, 87, 134);
+}
+.regestration__header{
+  display: flex;
+  justify-content: space-between;
+}
+.fa-times{
+  font-size: 20px;
+}
+.regestration__form input{
+  width: 100%;
+  padding: 5px 15px; 
+  color: rgb(134, 87, 134);
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.regestration__title{
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+label{
+  display: block;
+  padding-top: 10px;
+}
+.regestration__footer{
+  display: block;
+  margin: 20px 0;
+  font-size: 12px;
+}
+.reg__rules{
+  color: blue;
+}
+.reg__btn{
+  padding: 5px 15px;
+  border: 1px solid rgb(134, 87, 134);
+  border-radius: 5px;
+  background-color:  rgb(163, 133, 163);
+  color: #F0F0F0;
+  
+  transition:  0.2s linear;
+}
+.reg__btn:hover{
+  background-color: rgb(133, 91, 133);
+  color: #F0F0F0;
+}
+
+/* Authorization */
+
+.authorization__window{
+  /* display: none; */
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  
+  transition: 1s linear ;
+}
+.authorization__container{
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: #ffffff;
+  border: 1px solid rgb(134, 87, 134);
+}
+.authorization__form{
+  padding: 30px; 
+  color: rgb(134, 87, 134);
+}
+.authorization__header{
+  display: flex;
+  justify-content: space-between;
+}
+.authorization__form input{
+  width: 100%;
+  padding: 5px 15px; 
+  color: rgb(134, 87, 134);
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.authorization__title{
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+.authorization__footer{
+  display: block;
+  margin: 20px 0;
+  font-size: 12px;
+}
+.auth__btn{
+  margin-top: 20px;
+  padding: 5px 15px;
+  border: 1px solid rgb(134, 87, 134);
+  border-radius: 5px;
+  background-color:  rgb(163, 133, 163);
+  color: #F0F0F0;
+  
+  transition:  0.2s linear;
+}
+.auth__btn:hover{
+  background-color: rgb(133, 91, 133);
+  color: #F0F0F0;
+}
+
+  /* Shoes */
+
+.shoes{
+  background-color: #fff;
+}
+.shoes__pretitle{
+  font-size: 30px;
+  color: rgb(133, 91, 133);
+  text-align: center;
+  margin-top: 30px;
+}
+.back__to__shoes2{
+  color: rgb(133, 91, 133);
+}
+.back__to__shoes2:hover{
+  cursor: pointer;
+}
+.back__to__shoes2 .fas{
+  color: rgb(133, 91, 133);
+  margin: 20px 20px;
+}
+.shoes__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.shoes__pairs{
+  width: 32%;
+  border: 1px solid rgb(133, 91, 133);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.for__img{
+  text-align: center;
+}
+.for__img:hover{
+  cursor: pointer;
+}
+.shoes__pairs img{
+  height: 100%;
+  width: 300px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.shoes__title{
+  display: flex;
+  justify-content: space-between;
+  color: rgb(133, 91, 133);
+}
+.shoes__bucket a{
+  display: block;
+  padding: 5px 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(133, 91, 133);
+  border: 1px solid rgb(133, 91, 133);
+  border-radius: 5px;
+
+  transition: 0.2s linear;
+}
+.shoes__bucket a:hover{
+  background-color:rgb(212, 195, 212);
+}
+
+/* Shoes Description */
+.shoes__discription{
+  padding: 70px 0;
+  position: relative;
+}
+.back__to__shoes{
+  position: absolute;
+  top: 50px;
+  left: 15%;
+  color: rgb(133, 91, 133);
+}
+.back__to__shoes:hover{
+  cursor: pointer;
+}
+.back__to__shoes .fas{
+  color: rgb(133, 91, 133);
+  margin-right: 20px;
+}
+.shoes__description__container{
+  display: flex;
+  justify-content: space-around;
+}
+.shoes__description__block{
+  width: 70%;
+}
+.shoes__description__block2{
+  align-self: center;
+  width: 30%;
+  font-size: 25px;
+  color: rgb(133, 91, 133);
+}
+.shoes__mainImg img{
+  width: 100%;
+  height: 100%;
+}
+.shoes__secondaryImg{
+  display: flex;
+}
+.shoes__secondaryImg img{
+  width: 33%;
+  height: 100%;
+}
+.shoes__description__title{
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.shoes__description__price{
+  margin-bottom: 30px;
+  color: #ffd000;
+}
+.shoes__description__materials{
+  margin-bottom: 30px;
+}
+.shoes__description__color{
+  margin-bottom: 30px;
+}
+.shoes__description__country{
+  margin-bottom: 30px;
+}
+
+/* Trash */
+
+.trash{
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+.trash__title{
+  text-align: center;
+  color: rgb(133, 91, 133);
+  font-size: 30px;
+  font-weight: 600;
+}
+.trash__container{
+  display: flex;
+  flex-direction: column;
+}
+.trash__block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(133, 91, 133);
+  border: 1px solid rgb(140, 146, 151);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.trash__item{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trash__item img{
+  height: 150px;
+  border-radius: 10px;
+}
+.trash__name::after{
+  content: '';
+  display: block;
+  border-bottom: 1px solid rgb(140, 146, 151);
+}
+.trash__price{
+  color: rgb(236, 152, 25);
+}
+.trash__close{
+  color: rgb(133, 91, 133);
+  margin-right: 20px;
+}
+.trash__close i{
+  color: rgb(133, 91, 133);
+}
+.trash__footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(133, 91, 133);
+}
+.trash__btn{
+  display: block;
+  color: rgb(133, 91, 133);
+  padding: 10px 20px;
+  border: 1px solid rgb(133, 91, 133);
+
+  transition: 0.3s;
+}
+.trash__btn:hover{
+  color: #F0F0F0;
+  background-color: rgb(105, 86, 148);
+}
+
+/* Ordering */
+
+.ordering{
+  background-color: #fff;
+  color: rgb(133, 91, 133);
+}
+.ordering__title{
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.ordering__container{
+  display: flex;
+  justify-content: space-between;
+}
+.ordering__personal__information{
+  width: 50%;
+}
+.ordering__name{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.ordering__email{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.ordering__size {
+  display: flex;
+}
+.ordering__size label{
+  padding: 0;
+  margin-right: 20px;
+}
+#ordering__size__count{
+  width: 50px;
+  border-radius: 2px;
+  text-align: center;
+}
+.ordering__product__information{
+  width: 50%;
+  text-align: center;
+}
+.ordering__product{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(158, 149, 149);
+}
+.last__item{
+  border: none;
+}
+.payment{
+  display: block;
+  width: 45%;
+  font-size: 12px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+.ordering__accept{
+  width: 30%;
+  text-align: center;
+  padding: 10px 0;
+  background-color:  rgb(133, 91, 133);
+  color: #F0F0F0;
+  border-radius: 5px;
+
+  transition: 0.3s linear;
+}
+.ordering__accept:hover{
+  background-color:  rgb(92, 61, 92);
+  color: #ffffff;
+}
+.accept__window{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  
+  transition: 1s linear ;
+}
+.accept__container{
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: #F0F0F0;
+  border: 1px solid rgb(134, 87, 134);
+}
+
+/* General */
+
+.hidden{
+  display: none;
+}
+.error{
+  border: 1px solid red;
+}
+.wrap{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer{
+  margin-top: auto;
+}
+.mini__container{
+  min-height: 50vh;
+  color: rgb(133, 91, 133);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.emptyItem{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* Media */
+
+@media (min-width: 1200px) and (max-width:4000px){
+  .shoes__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .shoes__pairs{
+    width: 32%;
+  }
+  .shoes__pairs img{
+    width: 270px;
+  }
+}
+
+@media (min-width: 992px) and (max-width:1200px){
+  .header__container{
+    display: flex;
+    flex-direction: column;
+  }
+  .header__nav div,  
+  .header__input{
+    margin-top: 10px;
+  }
+  .main__block img{
+    height: 180px;
+  }
+  .shoes__pairs img{
+    width: 230px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+  .header__container{
+    display: flex;
+    flex-direction: column;
+  }
+  .header__nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .header__nav div,  
+  .header__input{
+    margin-top: 10px;
+  }
+  .main__block {
+    width: 40%; 
+    text-align: center;
+  }
+  .main__block img{
+    height: 250px;
+  }
+  .shoes__pairs{
+    width: 49%;
+  }
+  .shoes__pairs img{
+    width: 280px;
+  }
+  .shoes__description__block{
+    width: 100%;
+  }
+  .shoes__description__block2{
+    align-self: center;
+    width: 100%;
+    font-size: 25px;
+    color: rgb(133, 91, 133);
+  }
+  .trash__item{
+    display: flex;
+    justify-content: baseline;
+  }
+  .shoes__price{
+    margin: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .header__container{
+    display: flex;
+    flex-direction: column;
+  }
+  .header__nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .header__nav div,  
+  .header__input{
+    margin-top: 10px;
+  }
+  .main__block {
+    width: 40%; 
+    text-align: center;
+  }
+  .main__block img{
+    height: 150px;
+  }
+  .shoes__pairs{
+    width: 49%;
+  }
+  .shoes__pairs img{
+    width: 200px;
+  }
+  .shoes__title{
+    display: flex;
+    flex-direction: column;
+  }
+  .shoes__price{
+    margin-top: 10px;
+  }
+  .shoes__description__block{
+    width: 100%;
+  }
+  .shoes__description__block2{
+    align-self: center;
+    width: 100%;
+    font-size: 25px;
+    color: rgb(133, 91, 133);
+  }
+  .trash__item{
+    display: flex;
+  }
+  .shoes__price{
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px){
+  .header__container{
+    display: flex;
+    flex-direction: column;
+  }
+  .header__nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .header__nav div,  
+  .header__input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .main__shoes{
+    font-size: 40px;
+  }
+  .main__blocks__container{
+    display: flex;
+    justify-content: center;
+  }
+  .main__block {
+    width: 100%; 
+    text-align: center;
+  }
+  .main__block img{
+    height: 250px;
+  }
+  .footer__container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .regestration__container{
+    width: 300px;
+  }
+  .authorization__container{
+    width: 300px;
+  }
+  .shoes__pairs{
+    width: 100%;
+  }
+  .shoes__pairs img{
+    width: 300px;
+  }
+  .shoes__title{
+    display: flex;
+    flex-direction: column;
+  }
+  .shoes__price{
+    margin-top: 10px;
+  }
+  .shoes__description__block{
+    width: 100%;
+  }
+  .shoes__description__block2{
+    align-self: center;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(133, 91, 133);
+  }
+  .trash__item{
+    display: flex;
+    flex-direction: column;
+  }
+  .ordering__container{
+    display: flex;
+    flex-direction: column;
+  }
+  .ordering__personal__information{
+    width: 100%;
+  }
+  .ordering__product__information{
+    width: 100%;
+    text-align: center;
+  }
+  .accept__container{
+    width: 300px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 405px) {
+  .header__input{
+    width: 200px;
+  }
+  .shoes__pairs img{
+    width: 230px;
+  }
+  .back__to__shoes2 .fas{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+  .trash__item img{
+    width: 200px;
+  }
+  .trash__btn{
+    text-align: center;
+  }
+  .ordering__accept{
+    width: 100%;
+  }
+}
